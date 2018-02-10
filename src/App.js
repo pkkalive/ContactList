@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ListContacts from './ListContacts';
 
 const contacts = [
   {
@@ -24,8 +25,9 @@ const contacts = [
 class App extends Component {
   render() {
     return (
-      <div className = "App">
-        {contacts.map(data => data.name)}
+      <div>
+        <ListContacts contact = {contacts} />
+
       </div>
     );
   }
