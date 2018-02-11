@@ -1,1 +1,1 @@
-This is react web app fro contact list
+This is react web app for contact list
