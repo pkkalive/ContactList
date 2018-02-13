@@ -5,7 +5,6 @@ class CreateContact extends Component {
     return (
       <div>
         CreateContact !!
-
       </div>
     );
   }
