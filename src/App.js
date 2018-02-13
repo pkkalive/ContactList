@@ -6,7 +6,6 @@ import { Route } from 'react-router-dom';
 
 class App extends Component {
   state = {
-    myScreen : 'list',
     contacts : []
   }
 
@@ -24,9 +23,6 @@ class App extends Component {
     ContactsAPI.remove(contact)
   }
 
-  navigateToCreate = () =>{
-    this.setState({ myScreen : 'create' })
-  }
   render() {
     return (
       <div className = "app">
@@ -34,7 +30,6 @@ class App extends Component {
             <ListContacts
               contact = {this.state.contacts}
               onDeleteContact = {this.removeContact}
-              onNavigate = {this.navigateToCreate}
             />
           )}
           />
